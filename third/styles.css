@@ -1,0 +1,126 @@
+* { box-sizing: border-box; }
+body { font-family: "Lato", sans-serif }
+ul.un-default {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+a.un-default, a.un-default:hover {
+	text-decoration: none;
+	color: white;
+}
+
+/*********************/
+
+header {
+	z-index: 10;
+}
+header .bar {
+	width: 30px;
+	margin-left: auto;
+	margin-right: 15px;
+	font-size: 25px;
+}
+
+.nav-menu {
+	z-index: 10;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*height: 80px;*/
+}
+.nav-menu ul li {
+	display: inline;
+	/*height: 100%;*/
+}
+.nav-menu ul li a:hover {
+	background: #e3e3e3;
+}
+.nav-menu ul lia:hover  {
+	color: black;
+}
+.nav-menu ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 18px 20px;
+}
+.nav-menu .search {
+	width: 100px;
+	padding: 15px 20px;
+	text-align: center;
+}
+.nav-menu .search:hover {
+	background: #f44336;
+}
+
+.nasted-menu .drop-down {
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	top:50px;
+	display: none;
+}
+
+.nasted-menu .drop-down li{
+	padding: 18px 0;
+}
+
+.nasted-menu:hover .drop-down {
+	display: flex;
+}
+
+section.site-gape {
+	padding: 40px 0;
+}
+.container-2 {
+	max-width: 800px;
+	padding: 0px 15px;
+}
+.opacity {
+	text-align: center;
+	opacity: .7;
+}
+.text-justify {
+	text-align: justify;
+}
+.tour-dates {
+	background: black;
+}
+
+.line-gape {
+	line-height: 1.7;
+}
+
+.contact input {
+	padding: 5px ;
+	width: 100%;
+}
+.contact form .row div {
+	padding-right: 10px !important;
+	/*width: 97%;*/
+}
+.contact input[type=button] {
+	width: 75px;
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+/*.image-section img{
+	height: 100vh;
+	width: 100%;
+}*/
+
+ul.social-icon li {
+	display: inline-block;
+	padding: 5px;
+}
+
+ul.social-icon li i {
+	font-size: 25px ;
+	opacity: 0.7;
+}
+
+.w3-hover-opacity:hover {
+	opacity: 0.6;
+}

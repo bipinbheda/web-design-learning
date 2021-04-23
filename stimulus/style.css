@@ -1,0 +1,247 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.site-header .nav-link {
+	color: #666;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 40px;
+	transition: all 0.4s ease-in-out;
+}
+
+.home-img {
+	background: url(images/home-img.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 100vh;
+}
+
+.my-experience-img,.section-quotes {
+	background-size: cover !important;
+	background-position: 50% 50% !important;
+	width: 100%;
+	height: 400px;
+}
+
+.navbar-nav {
+	margin-left: auto;
+}
+
+.banner-right-col {
+	background: #f1e2d7;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.content-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content-section h4 {
+	color: #999;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.content-section h1 {
+	font-size:42px;
+	font-wight:300;
+	font-style: normal;
+	font-family: sans-serif;
+	line-height: 1.1;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.content-section p {
+	color:#888;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 28px;
+	text-align:justify;
+}
+
+.section-btn {
+	border-radius: 50px;
+	border: 2px solid;
+	margin: 10px auto 10px 0;
+	transition: .7s ease;
+	padding: 10px 30px;
+}
+.section-btn:hover {
+	border-color:transparent;
+	background:#E3AE57;
+}
+
+.about-section .about-img {
+	background: url('images/about-img.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 100%;
+}
+
+.bg-yellow {
+	background: #E3AE57;
+}
+
+#about strong,
+#about span {
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 8px;
+	font-size:14px;
+}
+
+.progres-bar {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	bor
+}
+.progres-bar div {
+	height: 2px;
+	background-color: #000
+}
+.skill-progress .skill{
+	margin-top: 20px;
+}
+
+.about-thumb {
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+p {
+	color: #888;
+	font-size: 15px;
+	font-weight: 200;
+	line-height: 26px;
+	letter-spacing: 0.2px;
+}
+
+.section-service .service-thumb i.fa {
+	font-size:42px;
+}
+.media .icon .fa {
+	font-size: 42px;
+	margin-right: 14px;
+}
+
+.media-heading small{
+	font-size: 65%;
+	color: #633;
+	font-weight: bold;
+}
+
+.section-quotes {
+	background-size: cover !important;
+	background-position: 50% 50% !important;
+	width: 100%;
+	height: 400px;
+	background-attachment: fixed !important;
+	color: #ffffff;
+	position: relative;
+	padding: 100px 0px;
+}
+
+.overlay {
+	background: #121212;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0.7;
+	z-index: 1;
+}
+.quotes-content i.fa{
+	font-size:42px;
+}
+
+.quotes-content {
+	text-align:center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 50px;
+	color: white;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 2;
+}
+
+.social-links li {
+	margin-right: 20px;:
+}
+
+.social-links li a {
+	border-radius: 50px;
+	transition: 0.7s ease-out;
+}
+
+.social-links li a:hover {
+	background-color:#E3AE57;
+}
+
+input.transparent-input,textarea.transparent-input{
+	background-color:rgba(0,0,0,0) !important;
+	border:none !important;
+	border-bottom:1px solid orange !important;
+	caret-color: white;
+}
+
+textarea:focus, input:focus{
+	box-shadow: none !important;
+}
+
+.transparent-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+.section-contact .about-img{
+	background-size: cover !important;
+	background-position: center !important;
+	height: 100%;
+}
+
+.contact-info p a {
+	margin-left: 10px !important;
+}
+
+.btn-contact {
+	background-color: white;
+	border-radius: 50px;
+	padding: 10px 90px;
+	font-weight: 200;
+	font-size: 18px;
+	margin-left: 20px;
+	transision:0.7;
+}
+
+.btn-contact:hover {
+	background-color: transparent;
+	border: 1px solid orange;
+	color: white;
+}

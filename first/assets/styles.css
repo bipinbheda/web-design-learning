@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+main {
+    overflow-x: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.bg-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image img {
+    height: 300px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-fit-content {
+    width: fit-content;
+}
+
+.img-content .row > div {
+    padding: 0;
+    margin: : 0;
+}
+
+@media screen and (max-width: 768px) {
+  .img-content .row:nth-child(odd) {
+    flex-direction: column-reverse;
+}
+}
