@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        background-color: #242424
+    }
+
+}
+
+@layer utilities {
+    .custom-list li {
+        counter-increment: custom;
+    }
+
+    ul.custom-list li:before {
+        content: counter(custom, upper-roman) " ";
+    }
+
+    ul.custom-list li:first-child {
+        counter-reset: custom;
+    }
+
+    ul.custom-list.underscore li:before {
+        content: counter(custom, upper-roman) " _ ";
+    }
+}
