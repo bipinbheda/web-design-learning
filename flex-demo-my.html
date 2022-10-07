@@ -8,6 +8,7 @@
         .container {
             width: 90%;
             margin: 0 auto;
+            display: none;
         }
         .flex-container {
             display: flex;
@@ -31,9 +32,45 @@
         .item-8 { background-color: green; }
         .item-9 { background-color: hotpink; }
     </style>
+    <style type="text/css">
+        .height-75 {
+            height: 300px;
+            /*display: inline-block;*/
+        }
+        .bg-red {
+            background: red;
+            position: relative;
+        }
+        .bg-green {
+            background: green;
+        }
+        .img-1 {
+            width: 55%;
+            position: absolute;
+            clip-path: polygon(-8% 400%, 0% 0, 100% 0%);
+            height: 100%;
+        }
+        .img-2 {
+            right: 0px;
+            position: absolute;
+            clip-path: polygon(100% -300%, 0% 100%, 100% 100%);
+            width: 58%;
+            height: 100%;
+        }
+        .bg-cover {
+            background
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="height-75 bg-red">
+    <div class="bg-cover"style="background-image: url(http://localhost/web-design-learning/second/images/portfolio/portfolio-5.jpg)">
+    <img src="http://localhost/web-design-learning/second/images/portfolio/portfolio-5.jpg"class="img-1">
+    </div>
+        <img src="https://via.placeholder.com/300" class="img-2">
+    </div>
+    <div class="height-75 bg-green"></div>
+    <div class="container d-none">
         <div class="flex-container">
             <div class="item item-1">Item 1</div>
             <div class="item item-2">Item 2</div>
