@@ -1,0 +1,20 @@
+@tailwind base;
+
+@layer base {
+    h1, h2, h3 {
+        @apply font-baskervville;
+    }
+
+    nav {
+        @apply font-montserrat font-medium lg:text-sm text-gray-600 uppercase
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Black Jack";
+    src: url(../fonts/BLACKJAR.TTF);
+}
+

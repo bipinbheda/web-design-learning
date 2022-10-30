@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "dosis";
+  src: url(../font/dosis/Dosis-Medium.ttf);
+  font-weight: "normal";
+}
+
+@font-face {
+  font-family: "dosis";
+  src: url(../font/dosis/Dosis-ExtraBold.ttf);
+  font-weight: "800";
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Demi";
+  src: url(../font/ITCAvantGardeStd-Demi.otf);
+  font-weight: "normal";
+}
+
+@layer base {
+  body {
+    background-color: #f6f7fb;
+    @apply scrollbar;
+  }
+
+  input {
+    /* @apply border-none; */
+  }
+}
+
+@layer utilities {
+  li.active {
+    @apply text-sm;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    /* height: 100px; */
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    /* background: #f7f4ed; */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    padding-top: 36px;
+    background: #d1d5db;
+    border-radius: 100vh;
+    border: 0px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+
+  .scrolled {
+    @apply bg-[#f8f8f8]/80 py-4 rounded-full shadow-lg duration-1000;
+  }
+
+  .badge {
+    @apply text-white py-1 rounded-full leading-[0] pt-[6px] px-[14px] pb-[3px] text-sm;
+  }
+
+  .custom-shadow {
+    @apply hover:shadow-[0px_13px_26px_#93c5fdc9] duration-500;
+  }
+
+  input.custom-shadow {
+    @apply focus:shadow-[0px_13px_26px_#93c5fdc9] duration-500;
+  }
+
+}
