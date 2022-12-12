@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "postcss": "^8.4.18",
+    "postcss-nested": "^6.0.0",
+    "tailwindcss": "^3.2.1"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./src/assets/style.css --watch"
+  },
+  "dependencies": {
+    "tailwind-children": "^0.5.0"
+  }
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  ul,
+  ol {
+    list-style: revert;
+  }
+
+  h1 {
+    color: @apply text-red-600
+  }
+
+}
+
+@layer components {
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .owl-theme .owl-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 60px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .owl-theme .owl-dots {
+    display: none;
+  }
+}

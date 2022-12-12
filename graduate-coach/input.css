@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-lora text-[#342e37] tracking-[-1px];
+    }
+
+    h2 {
+        @apply text-[21px] tracking-[-.42px] leading-9
+        md:text-[42px] md:tracking-[-.84px] md:leading-[57px]
+        ;
+    }
+
+    body {
+        @apply bg-white;
+    }
+
+    a {
+        @apply hover:text-green transition-all duration-500
+    }
+
+    blockquote::before {
+        content: "";
+        height: 43px;
+        width: 43px;
+        background-image: url(./icons/right-quote-sign.svg);
+        background-size: 15px;
+
+        @apply bg-blue-200 rounded-full mb-6 bg-no-repeat block bg-center
+    }
+
+    .testimonials blockquote::before {
+        height: 114px;
+        width: 114px;
+        background-image: url(./icons/avtar-img.jpg);
+        background-size: 100%;
+        @apply bg-inherit border-[3px] border-green mx-auto
+    }
+
+    p {
+        @apply text-base font-light text-secondary
+        md:text-md;
+    }
+
+    html {
+        @apply scroll-smooth scroll-pt-2;
+    }
+
+}
+
+@layer components {
+    p.light {
+        @apply text-sm leading-7 md:text-md;
+    }
+    .submenu a:after {
+        content: '';
+        display: inline-block;
+        background-image: url('./icons/nav-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 14px;
+        width: 14px;
+        position: relative;
+        top: 3px;
+        right: -4px;
+    }
+
+    .submenu ul {
+        @apply hidden 
+        group-hover:block
+        before:content-[''] before:w-4 before:h-4 before:absolute before:-top-[15px] before:left-6 before:border-[9px] before:border-transparent before:border-b-[9px] before:border-b-white;
+        @apply hover:[&_li]:text-green;
+        @apply absolute left-0 top-14 w-52 bg-white z-10 transition-all duration-500;
+    }
+
+    .button {
+        @apply border-2 border-blue rounded-full mr-4 text-sm py-3 px-12 text-blue font-semibold transition-all duration-500 
+        hover:bg-blue/80 hover:text-white hover:border-blue/80;
+    }
+
+    a.button {
+        @apply block text-center;
+    }
+
+    .scrolled {
+        @apply md:sticky bg-white inset-0 shadow-xl z-10;
+    }
+
+    .scrolled > div {
+        @apply py-1;
+    }
+
+    .scrolled .submenu li {
+        @apply py-1;
+    }
+
+    .scrolled .submenu ul {
+        @apply top-20;
+    }
+    
+    .scrolled .site-logo img {
+        @apply lg:max-w-[75%]
+    }
+
+    .banner-section::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(./icons/banner-round.svg);
+        z-index: 19;
+        height: 55px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-size: 100%;
+    }
+
+    section.blue-before {
+        @apply relative
+    }
+    section.blue-before::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(./icons/banner-round.svg);
+        z-index: 9;
+        height: 54px;
+        top: -54px;
+        left: 0;
+        width: 100%;
+        background-size: 100%;
+
+        @apply md:h-[62px] md:top-[-62px];
+    }
+
+    
+    .read-more::after {
+        content: "";
+        background-image: url(./icons/readmore-arrow.svg);
+        width: 20px;
+        height: 14px;
+        @apply transition-all duration-300 left-full bottom-0 ml-2 bg-no-repeat block absolute group-hover:ml-3
+    }
+
+    .video-image::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        left: -40px;
+        z-index: -1;
+
+        @apply bg-blue-200 rounded-xl;
+    }
+
+    .logos .logo-item {
+        @apply w-1/3 md:w-1/6 px-[18px] my-[45px] text-center 
+        [&_img]:max-w-[64px] [&_img]:max-h-[29px] [&_img]:inline-block
+        md:[&_img]:max-w-[100px] md:[&_img]:max-h-[50px];
+        
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span{
+        @apply bg-blue !important
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 17px !important;
+        height: 17px !important;
+        @apply bg-blue-200
+    }
+
+    .testimonials .owl-theme .owl-dots .owl-dot span{
+        @apply bg-white !important
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        @apply mt-4;
+    }
+
+    .owl-nav {
+        @apply hidden;
+    }
+
+    .tag-badge {
+        @apply block bg-green rounded w-fit mx-auto text-white pt-[3px] px-[11px] pb-0.5 text-xs leading-6 font-semibold uppercase mb-[21px];
+    }
+
+    .owl-stage-outer {
+        overflow: initial !important;
+    }
+
+    .fixed-width {
+        @apply fixed w-full h-full z-20 bg-blue;
+    }
+    
+    .fixed-width li:last-child {
+        display: none;
+    }
+
+    .text-light {
+        @apply text-secondary text-[15px] font-light leading-7 
+    }
+
+    #tab-section li.active {
+        @apply bg-blue [&_a]:text-white [&_span]:text-green;
+    }
+
+    .choose-another-stage span::after {
+        content: "";
+        background-image: url(./icons/blue-up-arrow.svg);
+
+        @apply inline-block w-5 h-5 bg-no-repeat align-middle ml-5;
+    }
+
+    .blue-line::before {
+        content: "";
+        @apply block bg-gradient-to-t from-white via-blue-200 to-blue-200 -z-10 top-0 left-0 w-full absolute h-10;
+    }
+
+    .custom-list {
+        @apply list-none [&_li]:relative [&_li]:pl-3
+    }
+    .custom-list li::before {
+        @apply
+        content-['•'] h-2 w-2 rounded-full bg-blue absolute align-text-bottom text-blue mr-2 top-3 left-0
+    }
+
+    .wpcf7-form input.custom, textarea.custom {
+        @apply bg-transparent text-[#6d6671] text-sm border border-blue rounded-md block w-full mt-0.5 py-[15px] caret-green pl-4 !outline-none ring-0 placeholder:text-[17px];
+    }
+
+    .wpcf7-form label.custom {
+        @apply block text-xs font-light leading-[22px] tracking-[-0.24px] text-blue uppercase mb-4
+    }
+
+    #our-services .group.active{
+        @apply [&_.sub-active]:bg-blue [&_h3.sub-active]:text-white;
+        /* @apply bg-blue; */
+    }
+
+    #our-services .group.active h3.sub-active{
+        /* @apply text-white; */
+    }
+
+}
+
+@layer utilities {
+    .text-sm {
+        font-size: theme(fontSize.sm);
+        line-height: theme(spacing.7);
+        letter-spacing: -0.38px;
+    }
+    
+    .text-md {
+        font-size: 17px;
+        line-height: theme(spacing.8);
+        letter-spacing: -0.34px;
+    }
+}
+
+/* @media (min-width: theme('screens.sm')) {
+    p {
+        @apply bg-pink-500;
+    }
+}
+
+@media (min-width: theme('screens.md')) {
+    p {
+        @apply bg-gray-500;
+    }
+} */

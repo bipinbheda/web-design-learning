@@ -1,0 +1,143 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Basic Layout 3 - Full Width</title>
+</head>
+<body class="bg-white">
+	<header>
+		<div class="sm:flex sm:justify-between p-2 bg-gray-200">
+			<div>
+				logo
+			</div>
+			<div>
+				<ul class="flex mt-3 sm:mt-0">
+					<li class="bg-gray-400 px-2 mr-2">Likn 1</li>
+					<li class="bg-gray-400 px-2 mr-2">Likn 2</li>
+					<li class="bg-gray-400 px-2 mr-2">Likn 3</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="my-4"></div>
+		<div id="banner">
+			<div class="md:flex">
+				<div class="md:w-1/2">
+					<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				</div>
+				<div class="md:w-1/2">
+					<div class="px-6 py-4 text-justify">
+						<h2 class="text-2xl">Heading 2</h2>
+						<p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="my-4"></div>
+
+		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[20px] mx-4 [&_p]:text-justify">
+			<div class="card">
+				<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				<h4 class="text-lg">Article 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="card">
+				<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				<h4 class="text-lg">Article 2</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="card">
+				<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				<h4 class="text-lg">Article 3</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="card">
+				<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				<h4 class="text-lg">Article 4</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="card">
+				<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				<h4 class="text-lg">Article 5</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="card">
+				<img class="w-full" src="https://via.placeholder.com/450x250" alt="">
+				<h4 class="text-lg">Article 6</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</main>
+
+	<div class="my-4"></div>
+	<footer>
+		<div class="grid sm:grid-cols-2 gap-2 md:gap-16 md:grid-cols-4 bg-gray-200 px-12 py-6">
+			<div class="">
+				<h4 class="text-lg mb-2">Contact Us</h4>
+				<p>
+					Cecelia Havens<br/>
+					456 White Finch St.<br/>
+					North Augusta, SC 29860
+				</p>
+			</div>
+			<div class="">
+				<h4 class="text-lg mb-2">About</h4>
+				<ul class="[&_li]:text-sm">
+					<li>About Us</li>
+					<li>Our Team</li>
+					<li>Servies</li>
+					<li>Portfolio</li>
+					<li>Testimonial</li>
+				</ul>
+			</div>
+			<div class="">
+				<h4 class="text-lg mb-2">About</h4>
+				<ul class="[&_li]:text-sm">
+					<li>About Us</li>
+					<li>Our Team</li>
+					<li>Servies</li>
+					<li>Portfolio</li>
+					<li>Testimonial</li>
+				</ul>
+			</div>
+			<div class="">
+				<h4 class="text-lg mb-2">Social Link</h4>
+				<ul class="flex">
+					<li class="-ml-1.5">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="32" height="32"
+						viewBox="0 0 72 72"
+						style=" fill:#000000;"><path d="M45.049,14C57.06,14,58,14.94,58,26.951v18.098C58,57.06,57.06,58,45.049,58h-2.298V41.982h5.647l0.888-6.347h-6.535	c0,0-0.01-3.716,0-4.643c0.019-1.814,1.533-2.732,2.835-2.718c1.302,0.013,3.998,0.004,3.998,0.004v-5.849	c0,0-2.335-0.302-4.784-0.328c-2.058-0.021-4.331,0.535-6.165,2.384c-1.865,1.88-2.16,4.679-2.195,8.1c-0.01,0.989,0,3.049,0,3.049	h-5.526v6.347h5.526V58h-9.489C14.94,58,14,57.06,14,45.049V26.951C14,14.94,14.94,14,26.951,14H45.049z"></path></svg></li>
+						<li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="32" height="32"
+							viewBox="0 0 72 72"
+							style=" fill:#000000;"><path d="M 35.75 14 C 15.579 14 14 15.579 14 35.75 L 14 36.25 C 14 56.421 15.579 58 35.75 58 L 36.25 58 C 56.421 58 58 56.421 58 36.25 L 58 35.75 C 58 15.579 56.421 14 36.25 14 L 35.75 14 z M 48.996094 22.5 C 49.825094 22.498 50.498 23.168094 50.5 23.996094 C 50.502 24.825094 49.832906 25.498 49.003906 25.5 C 48.174906 25.502 47.502 24.832906 47.5 24.003906 C 47.498 23.174906 48.167094 22.502 48.996094 22.5 z M 35.976562 26 C 41.498562 25.987 45.987 30.454563 46 35.976562 C 46.013 41.498562 41.545437 45.987 36.023438 46 C 30.501437 46.013 26.013 41.545437 26 36.023438 C 25.987 30.501437 30.454563 26.013 35.976562 26 z M 35.990234 32 C 33.781234 32.006 31.995 33.800766 32 36.009766 C 32.006 38.218766 33.800766 40.005 36.009766 40 C 38.218766 39.995 40.005 38.199234 40 35.990234 C 39.994 33.781234 38.199234 31.995 35.990234 32 z"></path></svg>
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="32" height="32"
+							viewBox="0 0 72 72"
+							style=" fill:#000000;"><path d="M42.5,14C56.875,14,58,15.125,58,29.5v13C58,56.875,56.875,58,42.5,58h-13C15.125,58,14,56.875,14,42.5v-13	C14,15.125,15.125,14,29.5,14H42.5z M45.616,34.045v-3.79c0,0-2.003,0.01-3.695-1.54c-1.422-1.302-1.54-3.743-1.54-3.743h-3.79	c0,0,0,12.934,0,14.994s-1.793,3.127-3.079,3.127c-0.969,0-3.174-0.76-3.174-3.151c0-2.51,2.535-3.15,3.198-3.15	c0.663,0,0.924,0.142,0.924,0.142v-4c0,0-0.616-0.059-1.066-0.074c-3.825-0.13-6.988,3.303-6.988,7.083	c0,3.193,2.497,7.059,7.059,7.059c4.859,0,7.083-4.052,7.083-7.035c0-2.179,0-7.438,0-7.438s1.398,0.782,2.535,1.137	C44.219,34.021,45.616,34.045,45.616,34.045z"></path>
+						</svg>
+					</li>
+					<li>
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="32" height="32"
+						viewBox="0 0 72 72"
+						style=" fill:#000000;"><path d="M42.5,14C56.875,14,58,15.125,58,29.5v13C58,56.875,56.875,58,42.5,58h-13C15.125,58,14,56.875,14,42.5v-13	C14,15.125,15.125,14,29.5,14H42.5z M45.616,34.045v-3.79c0,0-2.003,0.01-3.695-1.54c-1.422-1.302-1.54-3.743-1.54-3.743h-3.79	c0,0,0,12.934,0,14.994s-1.793,3.127-3.079,3.127c-0.969,0-3.174-0.76-3.174-3.151c0-2.51,2.535-3.15,3.198-3.15	c0.663,0,0.924,0.142,0.924,0.142v-4c0,0-0.616-0.059-1.066-0.074c-3.825-0.13-6.988,3.303-6.988,7.083	c0,3.193,2.497,7.059,7.059,7.059c4.859,0,7.083-4.052,7.083-7.035c0-2.179,0-7.438,0-7.438s1.398,0.782,2.535,1.137	C44.219,34.021,45.616,34.045,45.616,34.045z"></path></svg>
+					</li>
+				</ul>
+				<div class="text-sm mt-5">
+					<p>Design By Bipin</p>
+					<p>Copyright 2022</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

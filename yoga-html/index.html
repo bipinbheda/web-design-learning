@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yoga</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;800&family=Lato:wght@100&display=swap');
+	</style>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						yoga: {
+							100 :'#f4f9f4',
+							200 :'#e2ede8',
+							300 :'#c6d9d4',
+							500 :'#6b9793',
+							600 :'#6c9894'
+						},
+						'dark-black' : '#444444'
+					}
+				},
+				fontFamily: {
+					baloo: ['"Baloo Bhai 2"'],
+				}
+			}
+		}
+	</script>
+</head>
+<body class="font-baloo">
+	<header class="text-gray-600 bg-yoga-100 body-font">
+		<div class="flex flex-col md:flex-row items-center">
+			<a class="flex title-font ml-8 font-medium items-center text-gray-900 mb-4 md:mb-0">
+				<img src="images/logo-2.png" alt="">
+			</a>
+			<div class="w-full bg-red-400 text-right">
+				<nav class="md:ml-auto text-dark-black  font-medium text-xl bg-yoga-200 flex flex-wrap text-base justify-end">
+					<a class="mr-5 py-2 px-4 hover:bg-yoga-300">HOME</a>
+					<a class="mr-5 py-2 px-4 hover:bg-yoga-300">ABOUT US</a>
+					<a class="mr-5 py-2 px-4 hover:bg-yoga-300">SERVICES</a>
+					<a class="mr-5 py-2 px-4 hover:bg-yoga-300">CONTACT US</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="text-gray-600 body-font break-words bg-red-400">
+		<div class="sm:flex sm:px-5 md:flex-row flex-col items-center bg-yoga-100">
+			<div class="md:w-1/2 w-full">
+				<img class="object-cover object-center rounded" alt="hero" src="images/Yoga-girl.png">
+			</div>
+			<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:text-left md:mb-0 items-center text-center">
+				<h1 class="title-font text-[94px] text-[66px] text-center mb-4 font-medium text-yoga-600">YOGA CLASS</h1>
+				<p class="mb-8 leading-relaxed text-yoga-600 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla neque euismod volutpat cursus. Vestibulum ac pretium orci,</p>
+				<div class="flex justify-center mb-4 md:mb-0">
+					<button class="ml-4 text-white text-[17px] bg-yoga-600 border-0 px-6 focus:outline-none hover:bg-yoga-200 rounded text-lg">JOIN NOW</button>
+				</div>
+			</div>
+		</div>
+		<div style="background-image: url(images/design-1.1.svg);">
+			<img src="images/design-1.1.svg" class="absolute right-0 -translate-y-1/2 w-4/12 md:w-1/5 " alt="">
+		</div>
+	</section>
+
+	<section class="text-gray-600 body-font rm-mt-4 bg-yoga-600 lg:h-[966px] pt-28">
+		<div class="container mx-auto">
+			<h2 class="text-[50px] sm:text-[75px] text-white text-center pb-14">CHOOSE CLASS</h2>
+			<div class="max-w-[726px] mx-auto">
+				<p class="leading-relaxed text-white text-[30px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+			</div>
+			<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 justify-center">
+				<div class="p-4 md:w-1/2 lg:w-1/3 sm:mb-0 mb-6 text-white text-center">
+					<img alt="content" class="object-cover object-center mx-auto" src="images/card-1.png">
+					<h2 class="text-[37px] font-medium title-font mt-5">NEWBIE CLASS</h2>
+					<p class="text-[22px] text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="p-4 md:w-1/2 lg:w-1/3 sm:mb-0 mb-6 text-white text-center">
+					<img alt="content" class="object-cover object-center mx-auto" src="images/card-2.png">
+					<h2 class="text-[37px] font-medium title-font mt-5">ADVANCED CLASS</h2>
+					<p class="text-[22px] text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="p-4 md:w-1/2 lg:w-1/3 sm:mb-0 mb-6 text-white text-center">
+					<img alt="content" class="object-cover object-center mx-auto" src="images/card-3.png">
+					<h2 class="text-[37px] font-medium title-font mt-5">EXPERT CLASS</h2>
+					<p class="text-[22px] text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="text-gray-600 body-font bg-yoga-600 pt-24 pb-8 lg:pb-0 bg-cover lg:h-[976px]" style="background-image: url('images/group-3-background.png');">
+		<div class="container mx-auto">
+			<h2 class="text-[75px] text-yoga-600 text-center pb-14">OUR STATS</h2>
+			<div class="max-w-[726px] mx-auto mb-32">
+				<p class="leading-tight text-yoga-600 text-[30px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+			</div>
+			<div class="flex flex-wrap justify-around sm:-m-4 -mx-4 -mb-10 -mt-4 text-yoga-600">
+				<div class="p-4 sm:mb-0 flex flex-col justify-center mb-6 text-center h-[330px] w-[330px] border-yoga-600 rounded-full border">
+					<h2 class="text-[67px] font-medium title-font mt-5">123</h2>
+					<p class="text-[27px] text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet</p>
+				</div>
+				<div class="p-4 sm:mb-0 flex flex-col justify-center mb-6 text-center h-[330px] w-[330px] border-yoga-600 rounded-full border">
+					<h2 class="text-[67px] font-medium title-font mt-5">123</h2>
+					<p class="text-[27px] text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet</p>
+				</div>
+				<div class="p-4 sm:mb-0 flex flex-col justify-center mb-6 text-center h-[330px] w-[330px] border-yoga-600 rounded-full border">
+					<h2 class="text-[67px] font-medium title-font mt-5">123</h2>
+					<p class="text-[27px] text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="md:flex bg-yoga-600">
+			<div class="w-full md:w-3/5 md:flex flex-col justify-center">
+				<div class="pl-[90px] pr-[70px] md:mb-0 mb-10 ">
+					<h2 class="text-[50px] md:text-[75px] text-white break-words">BEST INSTRUCTOR</h2>
+					<p class="leading-relaxed text-white text-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+					<div class="mt-12">
+						<button class="flex-shrink-0 bg-white text-[25px] py-7 px-[96px] text-yoga-600 border-0 focus:outline-none hover:bg-yoga-200 rounded text-lg mt-10 sm:mt-0 font-bold">READ MORE</button>
+					</div>
+				</div>
+			</div>
+			<div class="md:w-2/5 w-full">
+				<img src="images/meditation-girl.png" class="" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-no-repeat text-yoga-600">
+		<div class="md:flex">
+			<div class="md:w-2/4 w-full">
+				<img src="images/yoga-girl-2.png" class="sm:m-20 mx-auto" alt="">
+			</div>
+			<div class="w-full md:w-2/4 md:flex flex-col justify-center">
+				<div class="px-4 sm:pl-[90px] sm:pr-[70px] md:mb-0 mb-10 ">
+					<h2 class="text-[50px] sm:text-[75px] break-words">NEW EXPERIENCE</h2>
+					<p class="leading-relaxed text-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+					<div class="mt-12">
+						<button class="flex-shrink-0 bg-yoga-600 text-[25px] py-7 px-[80px] border-0 focus:outline-none hover:bg-opacity-90 rounded text-lg mt-10 text-white sm:mt-0 font-bold">READ MORE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="text-white bg-yoga-600 body-font">
+		<div class="container px-5 py-24 mx-auto">
+			<h2 class="text-[75px] text-white text-center mb-14">Pricing</h2>
+			<div class="max-w-[726px] mx-auto mb-12">
+				<p class="leading-relaxed text-white text-[30px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+			</div>
+			<div class="flex flex-wrap -mx-10 text-yoga-600">
+				<div class="p-4 lg:w-1/3 mx-auto">
+					<div class="px-10">
+						<div class="h-full bg-gray-100 pt-10 pb-7 rounded-lg overflow-hidden text-center relative">
+							<h2 class="text-[37px] font-medium title-font">NEWBIE CLASS</h2>
+							<h2 class="text-[37px] font-medium title-font">$00.00</h2>
+							<img src="images/star-icon.png" class="object-cover object-center mx-auto mb-12 mt-6" alt="">
+							<p class="leading-relaxed text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<div class="mt-12">
+								<button class="flex-shrink-0 bg-yoga-600 text-[25px] py-7 px-[80px] border-0 focus:outline-none hover:bg-opacity-90 rounded text-lg mt-10 text-white sm:mt-0 font-bold">READ MORE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-4 lg:w-1/3 mx-auto">
+					<div class="px-10">
+						<div class="h-full bg-gray-100 pt-10 pb-7 rounded-lg overflow-hidden text-center relative">
+							<h2 class="text-[37px] font-medium title-font">ADVANCE CLASS</h2>
+							<h2 class="text-[37px] font-medium title-font">$00.00</h2>
+							<img src="images/star-icon.png" class="object-cover object-center mx-auto mb-12 mt-6" alt="">
+							<p class="leading-relaxed text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<div class="mt-12">
+								<button class="flex-shrink-0 bg-yoga-600 text-[25px] py-7 px-[80px] border-0 focus:outline-none hover:bg-opacity-90 rounded text-lg mt-10 text-white sm:mt-0 font-bold">READ MORE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-4 lg:w-1/3 mx-auto">
+					<div class="px-10">
+						<div class="h-full bg-gray-100 pt-10 pb-7 rounded-lg overflow-hidden text-center relative">
+							<h2 class="text-[37px] font-medium title-font">EXPERT CLASS</h2>
+							<h2 class="text-[37px] font-medium title-font">$00.00</h2>
+							<img src="images/star-icon.png" class="object-cover object-center mx-auto mb-12 mt-6" alt="">
+							<p class="leading-relaxed text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<div class="mt-12">
+								<button class="flex-shrink-0 bg-yoga-600 text-[25px] py-7 px-[80px] border-0 focus:outline-none hover:bg-opacity-90 rounded text-lg mt-10 text-white sm:mt-0 font-bold">READ MORE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="text-gray-600 body-font bg-yoga-600 pt-24 bg-cover h-[976px]" style="background-image: url('images/backgrouud-image-6.png');">
+		<div class="container mx-auto">
+			<div class="flex flex-wrap justify-around sm:-m-4 -mx-4 -mb-10 -mt-4 text-yoga-600">
+				<div class="p-4 sm:mb-0 flex flex-col justify-center mb-6 text-center h-[330px] w-[330px]">
+					<img src="images/girl-with-design-6.png" alt="">
+				</div>
+			</div>
+			<div class="mx-auto mb-4">
+				<h3 class="leading-tight text-yoga-600 text-[58px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </h3>
+			</div>
+			<h2 class="text-[75px] text-yoga-600 text-center pb-14">TRAINER DEVANDRA</h2>
+		</div>
+	</section>
+
+	<section class="text-white bg-yoga-600 body-font">
+		<div class="container px-5 py-24 mx-auto">
+			<h2 class="text-[75px] text-white text-center mb-14">DONT MISS OUR UPDATE</h2>
+			<div class="max-w-[726px] mx-auto mb-12">
+				<p class="leading-relaxed text-white text-[30px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+			</div>
+			<div class="relative sm:w-96 w-full mx-auto">
+				<input type="search" id="search-dropdown" class="py-4 bg-opacity-100 bg-white border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-gray-500 focus:border-gray-500 block w-full px-2.5 focus-visible:outline-none pl-5" placeholder="Your email" required="">
+				<button type="submit" class="absolute top-0 right-0 p-2.5 py-3 text-lg font-medium text-yoga-600 bg-yoga-200 rounded-full border border-yoga-200 hover:bg-yoga-300 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+					<span class="pl-4 text-yoga-600 font-bold mr-3">Subscribe</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="text-gray-600 body-font">
+		<div class="container px-5 py-24 mx-auto text-yoga-600 lg:flex md:flex-row md:flex-nowrap flex-wrap flex-col">
+			<div class="lg:w-5/12 w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+				<h4 class="title-font text-[33px] mb-3">Title Here</h4>
+				<p class="mt-2 text-[25px] leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+			</div>
+			<div class="lg:w-7/12 w-full flex-grow flex flex-wrap -mb-10 lg:mt-0 mt-10 md:text-left text-center">
+				<div class="sm:w-1/3 w-full px-4">
+					<h4 class="title-font text-[33px] mb-3">About</h4>
+					<nav class="list-none mb-10 text-[25px]">
+						<li>
+							<a class="hover:text-gray-800">History</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Our Team</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Brand Guidelines</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Terms & Condition</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Privacy Policy</a>
+						</li>
+					</nav>
+				</div>
+				<div class="sm:w-1/3 w-full px-4">
+					<h4 class="title-font text-[33px] mb-3">Services</h4>
+					<nav class="list-none mb-10 text-[25px]">
+						<li>
+							<a class="hover:text-gray-800">How to Order</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Our Product</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Order Status</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Promo</a>
+						</li>
+						<li>
+							<a class="hover:text-gray-800">Payment Method</a>
+						</li>
+					</nav>
+				</div>
+				<div class="sm:w-1/3 w-full px-4">
+					<h4 class="title-font text-[33px] mb-3">Follow</h4>
+					<nav class="list-none mb-10 text-[25px] w-fit mx-auto md:w-full">
+						<li class="flex">
+							<span class="pr-6 pb-5">
+								<img src="images/facebook.png" class="rounded-full" alt="">
+							</span>
+							<a class="hover:text-gray-800">Facebook</a>
+						</li>
+						<li class="flex">
+							<span class="pr-6 pb-5">
+								<img src="images/twitter.png" class="rounded-full" alt="">
+							</span>
+							<a class="hover:text-gray-800">Twitter</a>
+						</li>
+						<li class="flex">
+							<span class="pr-6 pb-5">
+								<img src="images/instagram.png" class="rounded-full" alt="">
+							</span>
+							<a class="hover:text-gray-800">Instagram</a>
+						</li>
+						<li class="flex">
+							<span class="pr-6 pb-5">
+								<img src="images/whatsapp.png" class="rounded-full" alt="">
+							</span>
+							<a class="hover:text-gray-800">Whatsaap</a>
+						</li>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

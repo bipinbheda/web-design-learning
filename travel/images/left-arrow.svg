@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 78" width="88" height="78">
+	<title>Arrow</title>
+	<style>
+		.s0 { fill: #e9e7e7;stroke: #232323;stroke-width: 3 } 
+		.s1 { fill: none;stroke: #232323;stroke-width: 3 } 
+	</style>
+	<g id="Arrow">
+		<path id="Rectangle" class="s0" d="m13 3h63c5.5 0 10 4.5 10 10v53c0 5.5-4.5 10-10 10h-63c-5.5 0-10-4.5-10-10v-53c0-5.5 4.5-10 10-10z"/>
+		<path id="Line" class="s1" d="m44.3 57l-16.6-16.5 16.6-16.5"/>
+		<path id="Line" class="s1" d="m62.5 40.8l-35-0.2"/>
+	</g>
+</svg>

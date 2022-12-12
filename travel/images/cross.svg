@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 24" width="23" height="24">
+	<title>Cross</title>
+	<style>
+		.s0 { fill: none;stroke: #232323;stroke-width: 3 } 
+	</style>
+	<g id="Cross">
+		<path id="Line" class="s0" d="m12.6 2.5v18.5"/>
+		<path id="Line" class="s0" d="m20.9 11.8h-18.5"/>
+	</g>
+</svg>
